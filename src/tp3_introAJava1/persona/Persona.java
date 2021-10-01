@@ -3,9 +3,6 @@ package tp3_introAJava1.persona;
 import java.util.Date;
 
 public class Persona {
-	
-
-	
 	private int edad;
 	private String nombre;
 	private Date fechaNac;

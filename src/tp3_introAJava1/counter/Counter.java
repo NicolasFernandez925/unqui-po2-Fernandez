@@ -26,7 +26,7 @@ public class Counter {
 	
 	
 	public int multiplos(int x, int y) {
-		int numMultiploMasGrande = -1;
+		int numMultiploMasGrande = 1;
 		for(Integer i = 0; i <= 1000; i++) {
 			if( i % x == 0 && i % y == 0 ) {
 				numMultiploMasGrande = i;

@@ -16,7 +16,6 @@ public class Producto {
 		this.precio = precio;
 		this.esPrecioCuidado = esPrecioCuidado;
 	}
-	
 	public String getNombre() {
 		return this.nombre;
 	}

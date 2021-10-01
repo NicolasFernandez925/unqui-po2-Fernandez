@@ -1,0 +1,3 @@
+4) En Wollok no es necesario distinguir entre los dos objetos debido al polimorfismo, los dos entienden getName()
+
+5) Para asegurarse de que entiendan el mismo mensaje objetos de distinto tipo se crearia una interfaz
