@@ -1,4 +1,4 @@
-package openClosedPrinciple.caso1;
+package tp6_solid.refactorSolidEmail;
 
 public class Correo {
 

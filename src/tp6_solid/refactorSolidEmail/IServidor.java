@@ -1,5 +1,4 @@
-package openClosedPrinciple.caso1;
-
+package tp6_solid.refactorSolidEmail;
 import java.util.List;
 
 public interface IServidor {
@@ -10,10 +9,4 @@ public interface IServidor {
 
 	public void enviar(Correo correo);
 	
-	public float tazaDeTransferencia();
-
-	public void resetear();
-	
-	public void realizarBackUp();
-
 }

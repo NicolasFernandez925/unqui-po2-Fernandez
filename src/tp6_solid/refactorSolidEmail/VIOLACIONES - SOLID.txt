@@ -1,0 +1,25 @@
+=======================
+VIOLACIONES - S.O.L.I.D
+=======================
+
+SIP - En la clase "ClienteEmail" se violo la ley se (SIP) Single responsibility principle ya que la clase cliente borraba, contaba emails, realizaba tareas que no eran necesario que 
+      las realize. Se creo una clase Bandeja en donde se pusieron las tareas correspondientes. Ahora los correos depende exclusivamente de Bandeja 
+      y no del cliente de email( Se crearon las subclases de Correo solo a modo de ejemplo).
+
+=======================
+
+OP - En la clase "clienteEmail" la variable de instancia servidorPop viola el principio Open/Close, se cambio por el tipo de la interface IServidor. 
+     Ya que si se tipa por ServidorPor estariamos limitando a la extensión en el caso que se cambie el servidor va a seguir funcionando. 
+
+=======================
+
+ISP - En la Interfaz "IServidor"  se viola la ley de Interface segregation principle ya que el IServidor tiene mensajes que no todos los servidores van a usar, 
+      entonces se opto por crear otra interfaz llamada IManteniento y ahi van los mensajes que le corresponde. Luego, los servidores que precisen 
+      mantenimiento se implementa dicha interfaz.
+
+=======================
+
+DIP - En la clase "ClientreEmail", el metodo enviarCorreo instanciaba Correo, en donde eso viola la ley de (DIP) dependency inversion principle, un modulo de alto nivel no dberia                       
+      depender de otro que es de bajo nivel como lo es Correo, el clienteEmail tiene una relacion muy directa con Correo y eso conlleva a problemas. Las dependencias deberian de 
+      podes inyectarse desde el constructor o un metodo accesor (setter) y asi si en algun momente llega a cambiar el tipo de correo no hay que tocar el metodo para arreglarlo, se                     
+      inyecta el nuevo correo y listo. Esta ley va de la mano con (OP).  Se agrega ( Se  crearon las subclases de Correo solo a modo de ejemplo)
