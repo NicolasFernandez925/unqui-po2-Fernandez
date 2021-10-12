@@ -2,38 +2,15 @@ package tp5_interfaces.practicaEnumerativos;
 
 public enum Color {
 			
-		ROJO(4){
-			
-			@Override
-			public Color proximoColorMaduracion() {
-				return MIEL;
-			}
-			
-		},GRIS(3){
-			
-			@Override
-			public Color proximoColorMaduracion() {
-				return ROJO;
-			}
-
-		},AMARILLO(2){
-			
-			@Override
-			public Color proximoColorMaduracion() {
-				return GRIS;
-			}
-
-		},MIEL(1){
-			
-			@Override
-			public Color proximoColorMaduracion() {
-				return AMARILLO;
-			}
-
-		};
+		ROJO(4),GRIS(3),AMARILLO(2),MIEL(1);
 		
 		private int nivelDeRiesgo;
-		public abstract Color proximoColorMaduracion();
+		
+		public  Color proximoColorMaduracion() {
+			return this.ordinal() < Color.values().length - 1 ? 
+					Color.values()[ this.ordinal() + 1] : 
+						Color.values()[0];
+		}
 		
 		Color(int nvlRiesgo){
 			this.nivelDeRiesgo = nvlRiesgo;

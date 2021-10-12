@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import tp6_solid.sistemaBancario.creditos.ISolicitudDeCredito;
-import tp6_solid.sistemaBancario.creditos.SolicitudDeCredito;
 
 
 public class Banco {
@@ -31,8 +30,8 @@ public class Banco {
 		this.solicitudesDeCredito.add(solicitable);
 	}
 	
-	public void totalADesenbolsar() {
-		sectorContable.totalADesenbolsar(this);
+	public double totalADesenbolsar() {
+		return sectorContable.totalADesenbolsar(this);
 	}
 
 	public List<Cliente> getClientes() {
@@ -40,7 +39,7 @@ public class Banco {
 	}
 
 	public List<ISolicitudDeCredito> getSolicitudesDeCredito() {
-		return solicitudesDeCredito;
+		return this.solicitudesDeCredito;
 	}
 
 	

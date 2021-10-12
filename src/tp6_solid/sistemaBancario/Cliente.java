@@ -1,8 +1,5 @@
 package tp6_solid.sistemaBancario;
 
-import tp6_solid.sistemaBancario.creditos.SolicitudDeCreditoHipotecario;
-import tp6_solid.sistemaBancario.creditos.SolicitudDeCreditoPersonal;
-
 public class Cliente {
 	
 	private String nombre;
@@ -50,16 +47,5 @@ public class Cliente {
 	public double acreditarMonto(double montoCredito) {
 		return this.montoDeCredito += montoCredito;
 	}
-	
-	/*public void solicitarCreditoPersonal(Banco banco, double monto, int cuotas) {
-		SolicitudDeCreditoPersonal solicitud = new SolicitudDeCreditoPersonal(this, monto, cuotas);
-		SistemaInformaticoBancario.registrarSolicitud(solicitud, banco);
-	}
-	
-	public void solicitarCreditoHipotecario(Banco banco, double monto, int cuotas, Propiedad propiedad) {
-		SolicitudDeCreditoHipotecario solicitud = new SolicitudDeCreditoHipotecario(this, monto, cuotas, propiedad);
-		SistemaInformaticoBancario.registrarSolicitud(solicitud, banco);
-	}
-	*/
 	
 }

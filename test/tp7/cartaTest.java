@@ -1,13 +1,13 @@
-package tp7.caso1;
+package tp7;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import tp7_tdd.caso1.Carta;
-import tp7_tdd.caso1.Palo;
-import tp7_tdd.caso1.Valor;
+import tp7_tdd.Carta;
+import tp7_tdd.Palo;
+import tp7_tdd.Valor;
 
 class cartaTest {
 	

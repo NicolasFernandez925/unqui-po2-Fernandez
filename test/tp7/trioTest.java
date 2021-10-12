@@ -1,4 +1,4 @@
-package tp7.caso1;
+package tp7;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;

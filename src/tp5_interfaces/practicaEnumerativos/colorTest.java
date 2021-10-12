@@ -10,17 +10,23 @@ import org.junit.jupiter.api.Test;
 
 class colorTest {
 
-	private ActividadSemanal actividad;
 	@Test
-	void pruebaDeMaduracion() {
-		assertTrue(Color.AMARILLO.proximoColorMaduracion() == Color.valueOf("GRIS"));
+	void testSiguienteColorDeAmarilloEsMiel() {
+		assertTrue(Color.AMARILLO.proximoColorMaduracion() == Color.MIEL);
 	}
 	
 	@Test
-	void nivelDeRiesgo() {
-		//actividad = new ActividadSemanal(DiaDeLaSemana.JUEVES, LocalTime.now(),3,Deporte.FUTBOL);
-		//System.out.println(actividad.toString() + LocalTime.now());
-
+	void testSiguienteColorDeMielEsRojo() {
+		assertTrue(Color.MIEL.proximoColorMaduracion() == Color.ROJO);
+	}
+	
+	@Test
+	void testSiguienteColorDeGrisEsAmarillo() {
+		assertTrue(Color.GRIS.proximoColorMaduracion() == Color.AMARILLO);
+	}
+	
+	@Test
+	void testDeNivelDeRiesgo() {
 		assertTrue(Color.ROJO.getNivelDeRiesto() == 4);
 		assertFalse(Color.ROJO.getNivelDeRiesto() == 10);
 	}

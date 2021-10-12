@@ -30,6 +30,10 @@ public abstract class SolicitudDeCredito implements ISolicitudDeCredito{
 	public double monto() {
 		return this.montoSolicitado;
 	}
+	
+	public void setMontoSolicitado(double montoSolicitado) {
+		 this.montoSolicitado = montoSolicitado;
+	}
 
 	public int getPlazoEnMeses() {
 		return plazoEnMeses;
