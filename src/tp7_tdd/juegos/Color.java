@@ -1,11 +1,11 @@
-package tp7_tdd.caso1.juegos;
+package tp7_tdd.juegos;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-import tp7_tdd.caso1.Carta;
-import tp7_tdd.caso1.JugadaInicial;
-import tp7_tdd.caso1.tipoDeJuego;
+import tp7_tdd.Carta;
+import tp7_tdd.JugadaInicial;
+import tp7_tdd.tipoDeJuego;
 
 public class Color extends JugadaInicial {
 

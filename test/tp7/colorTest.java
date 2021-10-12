@@ -9,10 +9,10 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import tp7_tdd.caso1.Carta;
-import tp7_tdd.caso1.Palo;
-import tp7_tdd.caso1.tipoDeJuego;
-import tp7_tdd.caso1.juegos.Color;
+import tp7_tdd.Carta;
+import tp7_tdd.Palo;
+import tp7_tdd.tipoDeJuego;
+import tp7_tdd.juegos.Color;
 
 class colorTest {	
 	

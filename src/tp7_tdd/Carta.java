@@ -1,4 +1,4 @@
-package tp7_tdd.caso1;
+package tp7_tdd;
 
 public class Carta {
 	

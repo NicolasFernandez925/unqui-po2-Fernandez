@@ -1,9 +1,9 @@
-package tp7_tdd.caso1;
+package tp7_tdd;
 
 import java.util.Arrays;
 import java.util.List;
 
-import tp7_tdd.caso1.juegos.Poker;
+import tp7_tdd.juegos.Poker;
 
 public class PokerStatus {
 	
