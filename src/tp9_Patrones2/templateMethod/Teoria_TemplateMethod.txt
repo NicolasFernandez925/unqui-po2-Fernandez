@@ -1,0 +1,25 @@
+###############################
+#    PATRÓN - TEMPLATE METHOD #
+###############################
+
+1. Utilizando las ideas propuestas por el pattern resuelva los ejercicios siguientes.
+2. Responda:
+a. ¿Dónde se define el esqueleto del algoritmo?
+Resp. El esqueleto del algoritmo de define en la super clase abstracta.
+b. ¿Se puede redefinir el esqueleto?
+No, lo que se redefine son los metodos abstractos
+c. ¿Qué es lo que se puede redefinir?
+Los metodos abstractos, llamados operaciones primitivas y los metodos ganchos (Hooks)
+d. ¿Qué es un hook method?
+Un metodo hook es un metodo que provee un cuerpo por default, sin embargo las sub clases pueden redefinirlos con @override
+dandole el comportamiento que requiera.
+
+3. Busque dos ejemplos del patrón en las clases de la imagen de Smalltalk.
+
+4. Para cada ejemplo, realice un diagrama de clases indicando:
+
+a. La clase abstracta.
+b. El template method.
+c. Al menos dos clases concretas.
+d. Los métodos en la clase abstracta que se redefinen en la clase concreta.
+e. Indique hooks methods

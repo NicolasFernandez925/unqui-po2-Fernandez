@@ -1,0 +1,62 @@
+############################
+#    PATRÓN - COMPOSITE    #
+############################
+Ejercicio 1 - Desde el libro
+----------------------------
+Basándose en el capítulo del patrón de diseño del libro Design Patterns de Gamma et al.
+desarrolle los siguientes puntos.
+
+1) En la intención del patrón se indica que el cliente debe poder tratar de manera
+uniforme tanto a objetos individuales como compuestos. ¿ Cómo se logra esto con el patrón Composite?
+
+Se logra implementado una intefaz o clase abstracta que contiene un protocolo para agregar, borrar (sea el caso)
+y la operacion/operaciones a realizar. De esta manera todas las clases que implementen en caso de una interfaz, y herede en caso de una clase 
+abstracta se podra tratar de manera uniforme los objetos tantos compuestos como los individuales.
+
+3) Explique en que casos aplicaria el patron.
+
+  A)Se aplicaria cuando el cliente no le importara la diferencia entre un objeto simple y uno compuesto.
+  B)Cuando se quiera realizar algun calculo o tarea donde el diseño contiene una estructura de objetos 
+    compleja de forma de arbol.
+
+4)  Dentro de las consecuencias, se indica que los clientes deben mantenerse simples y no deben ser conscientes si están interactuando con un objeto hoja o una composición. 
+    ¿Que elementos de la programacion orientada a objetos hacen posible esto?
+
+   Los elementos que hacen posible esto son las interfaces, la herencia y el polimorfismo.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Ejercicio 2. Cultivos:
+
+3. Describa las alternativas que puede utilizar para calcular la ganancia anual.
+Relacione las alternativas.
+
+Una alternativa podria ser que al intanciar los objetos simples se le pase por el constructor la ganancia anual a c/u, en cambio para las compuestas saquen su ganancia
+anual sumando cada porcion y dividiendola por la cantidad de porciones que posea.
+
+4. Explique la discusión sobre quiénes deben implementar las operaciones de
+agregado y borrado de hijos.
+
+Las operaciones de borrado y agregado de hijos la deberia de implementar la clase compuesta (composite), ya que las hojas no manejan hijos. 
+
+5. Sobre su implementación, indique los roles que desempeñan cada una de las
+clases diseñadas en relación al patrón Composite.
+
+class Parcela ----> Component
+class ParcelaMixta ----> Composite
+class Trigo, Soja ----> hojas
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Ejercicio 3 - Juego de estrategias 
+
+La Interface #IPersonaje# es el Component
+La Class Caballero e Ingeniero seria las hojas
+La Class Ejercito seria el Composite
+
+Se utilizo el Patrón composite para modelar el juego de estrategias.
+
+comunicacion explicita, buscar la app en aprticular y mandar notificacion
+-> asumir que la app v a arecibir, alguien v a aincovar los msg de cambio de pie a vehiculo
+
