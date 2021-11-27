@@ -1,28 +1,28 @@
 package tp10_Patrones3.state.reproductorMp3;
 
-import java.time.LocalTime;
-
 public class Song {
 	
 	private String nombre;
-	private LocalTime duracion;
-		
-	public Song(String nombre, LocalTime duracion) {
+	
+	public Song(String nombre) {
 		super();
 		this.nombre = nombre;
-		this.duracion = duracion;
 	}
 	
-	public void play() {}
+	public void play() {
+		System.out.println("La canción " + this.getNombre() + " en Reproducción.");
+	}
 
-	public void stop() {}
+	public void stop() {
+		System.out.println("Canción " + this.getNombre() + " en Stop. Seleccione una canción.");
+	}
 
-	public void pause() {}
+	public void pause() {
+		System.out.println("La canción " + this.getNombre() + " en Pausa.");
+	}
 	
 	public String getNombre() {
 		return nombre;
 	}
-	public LocalTime getDuracion() {
-		return duracion;
-	}
+
 }
